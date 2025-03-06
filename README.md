@@ -21,34 +21,6 @@ pip install tensorflow opencv-python matplotlib scikit-learn pillow numpy pandas
 
 ---
 
-## 📂 Organisation du Projet
-
-- `data/` : Contient les images utilisées pour l'entraînement et le test.
-- `models/` : Fichiers de sauvegarde des modèles entraînés.
-- `notebooks/` : Contient les notebooks Jupyter utilisés pour l'entraînement et l'analyse.
-- `scripts/` : Contient les fichiers Python pour le prétraitement et l'entraînement.
-
----
-
-## ⚙️ Utilisation
-
-1️⃣ **Exécuter l'entraînement des modèles**  
-Lancez le script suivant pour entraîner les modèles sur vos données :
-
-```bash
-python scripts/train_model.py
-```
-
-2️⃣ **Tester une image spécifique**  
-Une fois le modèle entraîné, vous pouvez tester une image avec :
-
-```bash
-python scripts/predict.py --image chemin/vers/image.png
-```
-
-Cela retournera si la cellule est **infectée** ou **saine**.
-
----
 
 ## 📦 Modèles Utilisés
 
@@ -60,16 +32,6 @@ Les meilleurs poids des modèles sont stockés dans le dossier `models/`.
 
 ---
 
-## 📊 Évaluation des Performances
-
-Les modèles sont évalués à l'aide de métriques standards comme **accuracy, precision, recall et F1-score**.  
-L'évaluation se fait via :
-
-```bash
-python scripts/evaluate.py
-```
-
----
 
 ## 📷 Jeu de Données
 
@@ -96,32 +58,6 @@ Le modèle **CNN personnalisé** suit une architecture classique :
 
 ---
 
-## 🛠️ Développements Futurs
-
-- Ajout de **DenseNet** ou **EfficientNet** pour encore améliorer les performances.
-- Déploiement sous forme d'API Flask ou FastAPI.
-- Optimisation des temps d'inférence.
-- Ajout d'un pipeline d'entraînement automatique sur GPU.
-
----
-
-## 📄 Licence
-
-Ce projet est sous licence **MIT**.
-
----
-
-## 🤝 Contributions
-
-Les contributions sont les bienvenues !  
-Vous pouvez ouvrir une issue ou soumettre une pull request.
-
----
-
-## 🧑‍💻 Auteur
-
-- **[Votre Nom]**  
-- Contact : [Votre Email]
 
 ---
 
